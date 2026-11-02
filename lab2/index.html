@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML5, CSS3, Tables, Position, Transform">
+    <meta name="description" content="Лабораторна робота №2 студент Сизоненко І. І., група ІМ-43, Варіант 53">
+    <title>Сизоненко Ілля, ІМ-43, Лаб2</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .var3-table {
+            border-collapse: collapse;
+            width: 700px;
+            text-align: center;
+            font-size: 15px;
+            margin-bottom: 40px;
+        }
+
+        .var3-table td {
+            border: 2px solid #333;
+            padding: 15px;
+        }
+
+        .row-1 td {
+            background-color: #538f8f;
+            color: #ffffff;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .row-2 td {
+            background-color: #f5f553;
+            color: #000000;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .row-1:hover td {
+            background-color: #f5f553;
+            color: #000000;
+        }
+
+        .row-2:hover td {
+            background-color: #538f8f;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Завдання 1. Таблиця</h2>
+    <table class="var3-table">
+        <tr class="row-1">
+            <td rowspan="2" style="width: 30%;">Сизоненко</td>
+            <td style="width: 30%;">Ілля</td>
+            <td rowspan="2" colspan="2" style="width: 40%;">Ігорович</td>
+        </tr>
+        <tr class="row-2">
+            <td>ІМ-43, ЛР-2, Вар 53</td>
+        </tr>
+        <tr>
+            <td>3.1</td>
+            <td>3.2</td>
+            <td>3.3</td>
+            <td>3.4</td>
+        </tr>
+        <tr>
+            <td>4.1</td>
+            <td>4.2</td>
+            <td colspan="2">4.3</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <div class="figures-layout">
+        <div class="fig-block">
+            <h3>1. За допомогою position</h3>
+            <div class="fig-pos">
+                <div class="shape top-shape"></div>
+                <div class="shape left-shape"></div>
+                <div class="shape right-shape"></div>
+            </div>
+        </div>
+
+        <div class="fig-block">
+            <h3>2. За допомогою transform</h3>
+            <div class="fig-trans">
+                <div class="shape top-shape-t"></div>
+                <div class="shape left-shape-t"></div>
+                <div class="shape right-shape-t"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

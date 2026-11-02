@@ -1,0 +1,71 @@
+.figures-layout {
+    display: flex;
+    gap: 120px;
+    margin-top: 20px;
+}
+
+.shape {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #000;
+    border-radius: 16px; 
+    box-sizing: border-box;
+}
+
+/* POSITION (top / left) */
+.fig-pos {
+    position: relative;
+    width: 220px;
+    height: 220px;
+}
+
+.fig-pos .top-shape {
+    background-color: #b9cde5;
+    position: absolute;
+    top: 17px;
+    left: 70px;
+    transform: rotate(45deg);
+}
+
+.fig-pos .left-shape {
+    background-color: #ffff00;
+    position: absolute;
+    top: 96px;
+    left: 24px;
+    transform: rotate(15deg); 
+}
+
+.fig-pos .right-shape {
+    background-color: #ce0071;
+    position: absolute;
+    top: 96px;
+    left: 116px;
+    transform: rotate(-15deg);
+}
+
+/* TRANSFORM (translate) */
+.fig-trans {
+    width: 220px;
+    height: 220px;
+}
+
+.fig-trans .shape {
+    display: block;
+}
+
+.fig-trans .top-shape-t {
+    background-color: #b9cde5;
+    transform: translate(70px, 17px) rotate(45deg);
+}
+
+.fig-trans .left-shape-t {
+    background-color: #ffff00;
+    margin-top: -80px; 
+    transform: translate(24px, 96px) rotate(15deg);
+}
+
+.fig-trans .right-shape-t {
+    background-color: #ce0071;
+    margin-top: -80px;
+    transform: translate(116px, 96px) rotate(-15deg);
+}
