@@ -1,0 +1,31 @@
+.color-state-1 {
+    background-color: blue;
+    color: white;
+}
+
+.color-state-2 {
+    background-color: #26ce28;
+    color: rgb(255, 255, 255);
+}
+
+#el-4,
+.el-5 {
+    cursor: pointer;
+    user-select: none;
+}
+
+#img-container a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.controls {
+    margin-top: 10px;
+}
+
+.controls button {
+    padding: 4px 12px;
+    margin-right: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
