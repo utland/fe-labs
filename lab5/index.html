@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="студент, html, frontend">
+    <meta name="description" content="Сизоненко Ілля, група ІМ-43">
+    <title>Сизоненко І. І., ІМ-43, ЛР-4, Варіант 53</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-wrapper">
+        <form id="register-form">
+            <input type="text" name="name" placeholder="ПІБ" maxlength="20">
+            <input type="number" name="variant" placeholder="Варіант">
+            <input type="text" name="phone" placeholder="Телефон" maxlength="20">
+            <input type="text" name="falc" placeholder="Факультет" maxlength="20">
+            <input type="text" name="address" placeholder="Адреса" maxlength="20">
+            <button type="submit">Підтвердити</button>
+        </form>
+        <div class="message">
+            <h2>Введені дані</h2>
+            <h3>Ім'я: <p id="name"></p></h3>
+            <h3>Варіант: <p id="variant"></p></h3>
+            <h3>Телефон: <p id="phone"></p></h3>
+            <h3>Факультет: <p id="falc"></p></h3>
+            <h3>Адреса: <p id="address"></p></h3>
+        </div>
+    </div>
+    <div class="line-separator"></div>
+    <div class="table-wrapper">
+        <div class="controls">
+            <input type="color" id="color-picker" value="#ff5722">
+        </div>
+        <table id="grid-table"></table>
+    </div>
+    <script src="./scripts/form.js"></script>
+    <script src="./scripts/table.js"></script>
+</body>

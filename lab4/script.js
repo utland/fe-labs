@@ -18,7 +18,6 @@ el5.addEventListener('click', function () {
 });
 
 const imgContainer = document.getElementById('img-container');
-const imgUrl = 'https://images.unsplash.com/photo-1595867818082-083862f3d630?auto=format&fit=crop&w=800&q=80';
 
 document.getElementById('btn-add').addEventListener('click', function () {
     const link = document.createElement('a');
@@ -27,7 +26,7 @@ document.getElementById('btn-add').addEventListener('click', function () {
     link.title = 'Перейти на офіційний сайт Мюнхена';
 
     const img = document.createElement('img');
-    img.src = imgUrl;
+    img.src = 'https://images.unsplash.com/photo-1595867818082-083862f3d630?auto=format&fit=crop&w=800&q=80';
     img.alt = 'Панорама Мюнхена та площа Марієнплац';
     img.width = 600;
 
