@@ -5,17 +5,17 @@ const validateForm = (event) => {
     event.preventDefault();
 
     const nameRegex = /^[А-ЯІЇЄҐ][а-яіїєґ]+\s[А-ЯІЇЄҐ]\.[А-ЯІЇЄҐ]\.$/; 
-    const variantRegex = /^\d{1,2}$/;
-    const phoneRegex = /^\(\d{3}\)-\d{3}-\d{2}-\d{2}$/;
-    const falcRegex = /^[А-ЯІЇЄҐ]{4}$/;                  
-    const addressRegex = /^м\.\s[А-ЯІЇЄҐ][а-яіїєґ'-]+$/;
+    const groupRegex = /^[А-ЯІЇЄҐ]{2}\-\d{2}$/;
+    const cardRegex = /^[A-Z]{2}\s\N\d{6}$/;
+    const birthdayRegex = /^\d{2}\.\d{2}\.\d{4}$/;                  
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.com$/;
 
     const inputs = [
         { el: form.elements.name, regex: nameRegex },
-        { el: form.elements.phone, regex: phoneRegex },
-        { el: form.elements.falc, regex: falcRegex },
-        { el: form.elements.address, regex: addressRegex },
-        { el: form.elements.variant, regex: variantRegex }
+        { el: form.elements.group, regex: groupRegex },
+        { el: form.elements.card, regex: cardRegex },
+        { el: form.elements.birthday, regex: birthdayRegex },
+        { el: form.elements.email, regex: emailRegex }
     ];
 
     let isValid = true;
